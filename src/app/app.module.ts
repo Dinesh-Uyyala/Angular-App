@@ -35,8 +35,6 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatCardModule} from '@angular/material/card';
-import { DineshComponent } from './dinesh/dinesh.component';
-import { DineshComponent } from './dinesh/dinesh.component';
 @NgModule({
   declarations: [	
     AppComponent,
@@ -59,9 +57,7 @@ import { DineshComponent } from './dinesh/dinesh.component';
     ParentComponent,
     ChildComponent,
     CapitalDirective,
-    BalancePipe,
-    DineshComponent,
-      DineshComponent
+    BalancePipe
    ],
   imports: [
     BrowserModule,
