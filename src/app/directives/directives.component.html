@@ -1,0 +1,27 @@
+<h1>Directives</h1>
+
+<table border="1" [cellSpacing]="0" [cellPadding]="5" *ngIf="employeedata">
+    <thead>
+        <tr>
+            <th>S No</th>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees;let i=index">
+            <td>{{i+1}}</td>
+            <td [ngClass]="{'color':'blue'}">{{employee.id}}</td>
+            <td>{{employee.name}}</td>
+            <td>{{employee.position | uppercase}}</td>
+            <td>
+                <button (click)="delete(i)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h2>Current Time:{{currentTime}}</h2>

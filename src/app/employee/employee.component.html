@@ -1,0 +1,51 @@
+<h1>Employees</h1>
+
+<label>Name</label>
+<input type="text" [(ngModel)]="name"><br>
+<label>Id</label>
+<input type="number" [(ngModel)]="id"><br>
+<label>Position</label>
+<input type="text" [(ngModel)]="position"><br>
+<label>Package</label>
+<input type="number" [(ngModel)]="package"><br>
+<button (click)="add()">Add Employee</button>
+
+
+
+
+
+
+<br>
+<button (click)="bonus()">Bonus(20K)</button>
+<button (click)="total()">Total cost to company</button>
+<select [(ngModel)]="role" (change)="filter()">
+    <option>Corporate Trainer</option>
+    <option>Developer</option>
+    <option>Designer</option>
+</select>
+<button (click)="sort()">Package low to high</button>
+<table border="1" [cellSpacing]="0" [cellPadding]="5">
+    <thead>
+        <tr>
+            <th>S No</th>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Package</th>
+            <th>Actions</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees;let i=index">
+            <td>{{i+1}}</td>
+            <td [ngClass]="{'color':'blue'}">{{employee.id}}</td>
+            <td>{{employee.name}}</td>
+            <td>{{employee.position}}</td>
+            <td>{{employee.package}}</td>
+            <td>
+                <button (click)="delete(i)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

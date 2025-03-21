@@ -1,0 +1,16 @@
+<div class="parent">
+    <div class="left">
+        <h1 routerLink="home">Home</h1>
+        <h1 routerLink="dummy">Dummy</h1>
+        <h1 routerLink="data-binding">Data Binding</h1>
+        <h1 routerLink="directives">Directives</h1>
+        <h1 routerLink="employee">Employee</h1>
+        <h1 routerLink="vehicle">Vehicle</h1>
+        <h1 routerLink="create-vehicle">Create Vehicle</h1>
+        <h1 routerLink="create-user">Create User</h1>
+        <h1 (click)="logout()">Logout</h1>
+    </div>
+    <div class="right">
+        <router-outlet></router-outlet>
+    </div>
+</div>

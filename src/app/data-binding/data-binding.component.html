@@ -1,0 +1,23 @@
+<!-- event binding(html-ts) -->
+<!-- <button (click)="submit()">Hi</button><br>
+<input type="text" (keyup)="typing()"> -->
+
+<!-- interpolation(ts-html) -->
+<!-- <h1>{{age}}</h1>
+<h1>{{name}}</h1> -->
+
+<!-- Property Binding (ts-html) -->
+ <!-- <button [disabled]="isIndian">Submit</button> -->
+
+ <!-- Two Way Data Binding (html<->ts) -->
+  <!-- <input type="text" [(ngModel)]="mobile"> -->
+
+
+  <h1>Calculator</h1>
+  <label>Num1</label>
+  <input type="number" [(ngModel)]="num1"><br>
+  <label>Num2</label>
+  <input type="number" [(ngModel)]="num2"><br>
+  <button (click)="calculate()" [disabled]="!num1 || !num2">Calculate</button>
+
+  <h1>Result: {{sum}}</h1>

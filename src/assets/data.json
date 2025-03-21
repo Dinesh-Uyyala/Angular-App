@@ -1,0 +1,37 @@
+[
+    {
+      "Vehicle": "Bugatti Volt",
+      "manufacturer": "Mercedes Benz",
+      "model": "Model X",
+      "type": "Passenger Van",
+      "fuel": "Diesel",
+      "color": "yellow",
+      "image": "https://loremflickr.com/640/480/food",
+      "cost": 59,
+      "tyres": 41,
+      "id": "36"
+    },
+    {
+      "Vehicle": "Jaguar Civic",
+      "manufacturer": "Chrysler",
+      "model": "Beetle",
+      "type": "Coupe",
+      "fuel": "Diesel",
+      "color": "plum",
+      "image": "https://loremflickr.com/640/480/fashion",
+      "cost": "11.00",
+      "tyres": 84,
+      "id": "39"
+    },
+    {
+      "Vehicle": "Mazda Taurus",
+      "manufacturer": "Smart",
+      "model": "911",
+      "type": "Extended Cab Pickup",
+      "fuel": "Hybrid",
+      "color": "Blue",
+      "image": "https://loremflickr.com/640/480/business",
+      "cost": 357,
+      "tyres": 85,
+      "id": "41"
+    }]
